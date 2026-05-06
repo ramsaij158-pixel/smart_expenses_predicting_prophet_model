@@ -1,0 +1,46 @@
+{
+    "folders": [
+        {
+            "name": "💡 Smart Expense Forecaster",
+            "path": "."
+        }
+    ],
+    "settings": {
+        "python.defaultInterpreterPath": "${workspaceFolder}/venv/Scripts/python.exe",
+        "editor.fontSize": 14,
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true,
+        "editor.wordWrap": "on",
+        "files.autoSave": "afterDelay",
+        "workbench.colorTheme": "Default Dark Modern",
+        "explorer.fileNesting.enabled": true,
+        "explorer.fileNesting.patterns": {
+            "advanced_app.py": "database.py, models.py, ai_advisor.py",
+            "split_data_advanced.py": "split_data_original.py",
+            "category_advanced.py": "category_original.py",
+            "prophet_advanced.py": "prophet_model_original.py",
+            "requirements_advanced.txt": "requirements_advanced.txt"
+        }
+    },
+    "extensions": {
+        "recommendations": [
+            "ms-python.python",
+            "ms-python.pylance",
+            "GrapeCity.gc-excelviewer",
+            "alexcvzz.vscode-sqlite"
+        ]
+    },
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "▶ Run Streamlit App",
+                "type": "python",
+                "request": "launch",
+                "module": "streamlit",
+                "args": ["run", "advanced_app.py"],
+                "console": "integratedTerminal"
+            }
+        ]
+    }
+}
